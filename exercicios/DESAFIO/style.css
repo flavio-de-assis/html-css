@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body h1 {
+    text-align: center;
+    background-color: aqua;
+    box-shadow: 9px 0px 9px black;
+    border-radius: 10%;
+    width: 300px;
+    margin: auto;
+}
+
+body > img {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    box-shadow: 5px 5px 11px black;
+    border-radius: 155px;
+    transition: 2;
+
+    
+}
+ 
+body > img:hover {
+    box-shadow: 5px 5px 11px green;
+}
+
+p {
+    text-align: center;
+    padding-top: 20px;
+
+}

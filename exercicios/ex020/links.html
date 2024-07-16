@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINKS</title>
+    <style>
+        /*  SELETORES PERSONALIZADOS
+             # = id
+           . = class
+           :: = pseudo-element
+           > = children
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: rgb(253, 2, 2);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: rgb(139, 9, 0);
+            
+        }
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+        a:active {
+            color: rgb(253, 2, 2);
+        }
+        .especial {
+            background-color: red;
+
+        }
+        .especial::before {
+            content: '» ';
+        }
+        .especial::after {
+            content: ' «';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/" target="_blank">GITHUB</a></li>
+        <li><a href="https://www.youtube.com/" class="especial">YT</a></li>
+        <li><a href="https://ufmg.br/">Curso</a></li>
+    </ul>
+</body>
+</html>
